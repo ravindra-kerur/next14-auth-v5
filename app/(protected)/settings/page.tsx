@@ -34,6 +34,7 @@ import { Switch } from "@/components/ui/switch";
 
 const SettingsPage = () => {
   const user = useCurrentUser();
+  console.log(user);
 
   const { update } = useSession();
   const [isPending, startTransaction] = useTransition();

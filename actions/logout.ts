@@ -3,8 +3,8 @@
 import { signOut } from "@/auth";
 
 export const logout = async () => {
-  // await signOut()
-  await signOut({ redirectTo: "/auth/login", redirect: true });
+  await signOut()
+//   await signOut({ redirectTo: "/auth/login", redirect: true });
 };
 
 // This is another method to signout from server component
