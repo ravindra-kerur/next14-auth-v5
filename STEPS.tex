@@ -1,0 +1,32 @@
+IMPLEMENT LOGIN:
+
+1. In order to enable login, we have to install next auth V5 inside of our project
+2. Head towards: https://authjs.dev/guides/ section
+3. Installing Auth.js: npm install next-auth@beta
+   https://authjs.dev/getting-started/migrating-to-v5
+
+4. http://localhost:3000/api/auth/providers   
+
+Auth.js: https://authjs.dev/
+Middleware config: https://dub.sh/Apr6dvD
+Resend: https://resend.com/
+Node.js: https://nodejs.org/en
+ShadcnUI: https://ui.shadcn.com/
+Clerk: https://dub.sh/SdVFxFU
+   
+
+Callback: To extend the session object ({"user":{"name":"test","email":"test@mail.com","image":null}}),"expires":"2024-09-20T07:02:22.048Z"}) 
+with couple of more staffes like id, role, bunch of more things inside of our session. next-auth has callbacks which can do that.
+
+Before we can extend the session, we have to extend jwt which returns our token because 
+session uses the token to generate the session
+
+Callbacks are asynchronous functions we can use to control what happens when an action is performed.
+https://next-auth.js.org/configuration/callbacks
+
+npx prisma studio - To access the database in browser - (http://localhost:5555/)
+
+*. Database reset - npx prisma migrate reset 
+*. If we reset the database we need to run: npx prisma db push
+
+   
