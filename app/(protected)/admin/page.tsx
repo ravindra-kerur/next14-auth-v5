@@ -1,6 +1,6 @@
 // To get user info from 'hook'
 "use client";
-import { useCurrentRole } from "@/hooks/use-current-role";
+// import { useCurrentRole } from "@/hooks/use-current-role";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import RoleGate from "@/components/auth/role-gate";
 import { UserRole } from "@prisma/client";
